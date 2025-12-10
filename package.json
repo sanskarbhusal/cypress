@@ -1,0 +1,20 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@git.bajratechnologies.com:j-25-11/J-25-11-QA/sanskar-bhusal/cypress.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^15.7.1"
+  }
+}
