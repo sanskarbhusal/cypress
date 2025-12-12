@@ -1,4 +1,2 @@
 node_modules/
-# I've included .env for future use cases since credentials should get pushed to the repository
-.env
- 
+cypress.env.json 
