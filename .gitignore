@@ -7,3 +7,4 @@ cypress/videos
 cypress/downloads
 cypress/logs
 snapshots
+mochawesome-report/
