@@ -1,2 +1,9 @@
 node_modules/
 cypress.env.json 
+
+# cypress specific
+cypress/screenshots
+cypress/videos
+cypress/downloads
+cypress/logs
+snapshots

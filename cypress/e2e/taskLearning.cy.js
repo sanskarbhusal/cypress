@@ -2,10 +2,9 @@ describe("", () => {
     beforeEach(() => {
         cy.task("seed")
     })
-
-afterEach("",()=>{
-    cy.task("resetDB")
-})
+    afterEach("", () => {
+        cy.task("resetDB")
+    })
     it("", () => {
         console.log("Test 1")
     })

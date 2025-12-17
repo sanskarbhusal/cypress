@@ -3,9 +3,11 @@
 describe("", () => {
     it("", () => {
         const obj = {
-            foo: function () { }
+            foo: (a) => {
+                return a
+            }
         }
-        // const role = cy.stub(obj, "foo").withArgs("poo").returns("boo")
-        console.log(obj.foo("random argument"))
+        cy.stub(obj, "foo").withArgs("poo").returns("boo")
+        console.log(n.foo("poo"))
     })
 })
