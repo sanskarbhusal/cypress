@@ -6,15 +6,18 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       on("task", {
         seed(db) {
-          return new Promise((reject, resolve) => {
+          return new Promise(( resolve) => {
             // seeding logic
+            resolve("DB Seeded")
           })
-        }
-      })
+        },    
+    resetDB(){
+     return new Promise ((resolve,reject)=>{
+      // reset logic
+       resolve("DB Reset Done")
+     }) 
     }
-  },
-  retries: {
-    openMode: 0,
-    runMode: 0
+      })
+    },
   },
 });

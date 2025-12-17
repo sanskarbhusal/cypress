@@ -3,8 +3,14 @@ describe("", () => {
         cy.task("seed")
     })
 
+afterEach("",()=>{
+    cy.task("resetDB")
+})
+    it("", () => {
+        console.log("Test 1")
+    })
 
     it("", () => {
-        // test code
+        console.log("Test 2")
     })
 })
