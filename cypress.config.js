@@ -22,4 +22,5 @@ export default defineConfig({
       })
     },
   },
+  projectId: "jj3v7v"
 });
