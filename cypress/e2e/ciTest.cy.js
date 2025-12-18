@@ -2,7 +2,7 @@
 
 describe("Tests CI", () => {
     it("", () => {
-        expect("true").to.be.true
-        cy.exec("echo Hi, I'm Sanskar, the world's greatest QA")
+        expect(true).to.be.true
+        cy.exec("echo Sanskar, the world's greatest QA")
     })
 })
