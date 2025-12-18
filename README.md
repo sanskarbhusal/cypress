@@ -17,4 +17,7 @@
 
 - ```npm run cy:open```
 
+<ins> Or if you need to run cypress in headless mode (without spawning a browser)</ins>
+
+ - ```npx cypress run --spec cypress/e2e/spec.cy.js```
 
