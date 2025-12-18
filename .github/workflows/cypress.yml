@@ -13,9 +13,9 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          record: true
+          # record: true
           parallel: true
-          command: npx cypress run --spec "cypress/e2e/ciTest.cy.js" --browser chrome
+          command: npx cypress run --spec "cypress/e2e/ciTest.cy.js" --record --key 1ba12e51-08f4-47ed-bd07-7b51ab68d316
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
