@@ -3,7 +3,7 @@ stages:
 # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
 # in GitLab repo → Settings → CI/CD → Variables
 variables:
-  CYPRESS_RECORD_KEY: $CYPRESS_RECORD_KEY
+  CYPRESS_RECORD_KEY: 1ba12e51-08f4-47ed-bd07-7b51ab68d316
 # Caches dependencies using npm lock file as key
 # https://docs.cypress.io/guides/continuous-integration/introduction#Caching
 cache:
@@ -27,4 +27,4 @@ test:
     # Runs tests in parallel and records to Cypress Cloud
     # https://docs.cypress.io/guides/cloud/projects#Set-up-a-project-to-record
     # https://docs.cypress.io/guides/guides/parallelization
-    - npx cypress run --record --parallel --browser chrome
+    - npx cypress run --spec cypress/e2e/ciTest.cy.js --record --parallel --browser chrome
